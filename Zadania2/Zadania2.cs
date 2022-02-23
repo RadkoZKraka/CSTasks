@@ -23,11 +23,6 @@ namespace Zadania2
             else
             {
                 Console.WriteLine("Trzy podane liczby nie tworzą trójki pitagorejskiej.");
-                 int a, b, c;
-            Console.WriteLine("Podaj trzy liczby:");
-            a = Int32.Parse(Console.ReadLine());
-            b = Int32.Parse(Console.ReadLine());
-            c = Int32.Parse(Console.ReadLine());
             }
         }
 
