@@ -276,9 +276,75 @@ namespace CSTasks
                 Console.WriteLine("Komórka: {0}, wartość {1}", i, dane[i]);
             }
         }
+        
+        public static void zad42()
+        {
+            int[] dane = new int[10];
+            int j = 9;
+            for (int i = 0; i <= 9; i++)
+            {
+                dane[i] = j;
+                Console.WriteLine("Komórka: {0}, wartość {1}", i, dane[i]);
+                j--;
+            }
+        }
+        public static void zad43()
+        {
+            int n = 10, i, j;
+            int[,] macierz = new int[n,n];
+            for (i = 0; i < n; i++)
+            {
+                for ( j = 0; j < n; j++)
+                {
+                    if (i == j)
+                    {
+                        macierz[i, j] = 1;
+                    }
+                    else
+                        macierz[i, j] = 0;
+                }
+            }
+            for ( i = 0; i < n; i++)
+            {
+                for ( j = 0; j < n; j++)
+                {
+                    Console.Write(macierz[i,j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            //nie działa to głupi debilu
+        }
+        public static void zad44()
+        {
+            int n = 10, i, j;
+            int[,] macierz = new int[n,n];
+            for (i = 0; i < n; i++)
+            {
+                for ( j = 0; j < n; j++)
+                {
+                    if (i == j)
+                    {
+                        macierz[i, j] = i;
+                    }
+                    else
+                        macierz[i, j] = 0;
+                }
+            }
+            for ( i = 0; i < n; i++)
+            {
+                for ( j = 0; j < n; j++)
+                {
+                    Console.Write(macierz[i,j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            //nie działa to głupi debilu
+        }
         public static void Main()
         {
-            zad41();
+            zad44();
         }
 
         public static double RoundUp(double input, int places)
